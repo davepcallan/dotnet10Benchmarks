@@ -36,7 +36,6 @@ public class FrozenDictionaryIntBenchmarks
     public FrozenDictionary<int, int> ConstructFrozenDictionary() =>
         FrozenDictionary.ToFrozenDictionary(_items);
 
-
     [BenchmarkCategory("TryGetValue_Found"), Benchmark]
     public bool FrozenDictionary_TryGetValue_Found()
     {
